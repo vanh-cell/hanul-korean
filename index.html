@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#7657d4"><meta name="description" content="Hanul: không gian tự học tiếng Hàn miễn phí bằng tiếng Việt. Học Hangul, ngữ pháp, từ vựng, nghe đọc viết và luyện TOPIK với tiến độ riêng của bạn.">
+  <title>Hanul — Tiếng Hàn mỗi ngày</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Đến nội dung</a>
+<aside id="sidebar">
+  <a class="brand" href="#home"><span class="brand-icon">ㅎ</span><span>hanul<span class="brand-dot">.</span><small>TIẾNG HÀN MỖI NGÀY</small></span></a>
+  <div class="workspace"><span class="avatar">나</span><div>Không gian của bạn<small>Tự học · Miễn phí</small></div><span class="live-dot"></span></div>
+  <p class="nav-label">GÓC HỌC TẬP</p><nav id="nav"></nav>
+  <div class="sidebar-bottom"><div class="tiny-flower">✳</div><b>Mỗi ngày một chút,<br>đi xa hơn một chút.</b><p>오늘도 할 수 있어요!</p><a href="#sources">Tài liệu & hướng dẫn <span>↗</span></a></div>
+</aside>
+<div class="shell">
+  <header><button class="icon-btn mobile-menu" id="menu-toggle" aria-label="Mở điều hướng">☰</button><span class="breadcrumb" id="breadcrumb">Góc học tập / <b>Tổng quan</b></span><form id="search-form"><span aria-hidden="true">⌕</span><input id="global-search" aria-label="Tìm bài học, từ vựng" placeholder="Tìm bài học, từ vựng…"><kbd>↵</kbd></form><button class="header-profile" data-go="progress" aria-label="Tiến độ của bạn">나</button></header>
+  <main id="main" tabindex="-1"></main>
+  <footer>한 걸음씩, 매일 조금씩. <span>Hanul · Học theo nhịp của riêng bạn</span></footer>
+</div>
+<dialog id="lesson-modal" aria-labelledby="lesson-heading"><div id="lesson-content"></div></dialog>
+<dialog id="audio-help" aria-labelledby="audio-help-title"><div class="modal-header"><h2 id="audio-help-title">Nghe phát âm tiếng Hàn</h2><button class="icon-btn" id="close-audio-help" aria-label="Đóng hướng dẫn âm thanh">✕</button></div><div class="modal-body" id="audio-help-content"></div></dialog>
+<aside id="speech-player" class="speech-player" aria-label="Trình phát phát âm" hidden><div class="flex spread"><span id="speech-caption" role="status" aria-live="polite"></span><button class="icon-btn" id="close-speech-player" aria-label="Đóng trình phát">✕</button></div><audio id="speech-audio" controls preload="none"></audio></aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="lessons.js"></script><script src="vocabulary.js"></script><script src="audio-map.js"></script><script src="app.js"></script>
+</body></html>
